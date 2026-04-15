@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+         h1{
+            color: rgb(59, 99, 201);;
+        }
+         button{
+        background-color: rgb(59, 99, 201);
+        color: white;
+        padding: 5px;
+
+    }
+    </style>
+    
+</head>
+<body>
+    <main> <h1>Student Registration form | Week 4 Lab A</h1>
+    <form action="#" method="POST" enctype="multipart/form-data"></form>
+    <fieldset>
+        <legend>Personal Details </legend>
+        <p>
+           <label for="full-name">Full Nmae:</label><br>
+            <input type="text" id="full-name" required >
+        </p>
+        <p>
+             <label for="email">Email:</label><br>
+            <input type="text" id="email" required >
+       
+        </p>
+        <p>
+             <label for="phone">Phone:</label><br>
+            <input  type="tel" id="phone"  >
+        </p>
+         <p>
+             <label for="dob">Date of Birth:</label><br>
+            <input type ="date" min="0" max="100"  id="dob"  >
+        </p>
+         <p>   
+        <label for ="Choose your gender">Choose your gender</label><br><br>
+        <label for="gender">Male</label>
+        <input type="radio"><br><br>
+        <label for="gender">Female</label>
+        <input type="radio"><br><br>
+        </p>
+         <p>
+         <label for = "pic">Select a profile picture:</label><br>
+         <input type="file" id="pic" accept="jpeg,png,jpg">
+     <script>
+            document.getElementById("pic").addEventListener("change",function()
+        {
+            const file =this.files[0];
+            if(file){
+                const maxSize = 3*1024*1024;//5MB
+            
+            if(file.size>maxSize){
+                alert("File is too large! Max size is 3MB")
+                this.value =" ";//clear input
+            }
+        }
+        });
+    </script>
+        </p>
+        
+            
+    </fieldset>
+    <fieldset>
+        <legend>Academic Details </legend>
+        <p>
+           <label for="student-id">Student-ID:</label><br>
+            <input type="text" id="student-id" required >
+        </p>
+        <p>
+           <label for="yos">Year of Study:</label><br>
+            <input type="number" id="yos" >
+        </p>
+          <p>   
+        <label for ="Choose your Program">Choose your program</label><br><br>
+        <label for="program">CS</label>
+        <input type="radio"><br><br>
+        <label for="program">CE</label>
+        <input type="radio"><br><br>
+        <label for="program">IT</label>
+        <input type="radio"><br><br>
+        </p>
+         
+         <p>
+        <label for="special">Specialization:</label><br>
+        <label for="special">AI</label>
+        <input type="checkbox"><br><br>
+        <label for="special">Networks</label>
+        <input type="checkbox"><br><br>
+        <label for="special">Web Security</label>
+        <input type="checkbox"><br><br>
+        </p>
+        
+
+    </fieldset>
+    <fieldset>
+        <p>
+        <label for="message">Tell us about your-self </label><br><br>
+        <textarea name=""id="" cols="30" rows="5"></textarea><br><br>
+       
+        </p>
+    </fieldset>
+   <br><center><button>submit</button></center>
+
+</main>
+   
+    
+</body>
+</html>
