@@ -1,0 +1,134 @@
+<!-- PART B — Course Results Table
+1.Create table.html
+New HTML5 file. Add a heading: <h1>CS 361 Module Assessment 
+Results</h1>.
+2.Table structure
+Build a complete table with: <caption>, <thead>, <tbody>, <tfoot>. Use <th 
+scope='col'> for column headers.
+3.Table content
+Columns: Student ID, Name, Quiz 1, Quiz 2, Theory Test, CA Total, Exam, Final 
+Grade. Add 8 rows of sample student data.
+4.Row header
+Add scope='row' to the Student ID column in each data row. Use <th> not 
+<td> for it.
+5.Merged cells
+In <tfoot> use colspan='5' on a cell spanning Student ID through Theory Test 
+columns to show 'Class Summary'.
+6.Validate & submit
+Validate both register.html and table.html. Submit links to your GitHub 
+Pages. (Submission link to be advised) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS 361 Module Assessment Results</title>
+</head>
+<body>
+  <h1>CS 361 Module Assessment Results</h1>
+
+  <table border="1" cellspacing="0" cellpadding="6">
+    <caption>CS 361 Module Assessment Results Summary</caption>
+    <thead>
+      <tr>
+        <th scope="col">Student ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Quiz 1</th>
+        <th scope="col">Quiz 2</th>
+        <th scope="col">Theory Test</th>
+        <th scope="col">CA Total</th>
+        <th scope="col">Exam</th>
+        <th scope="col">Final Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">202401</th>
+        <td>Amina Luse</td>
+        <td>16</td>
+        <td>14</td>
+        <td>14</td>
+        <td>29</td>
+        <td>56</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <th scope="row">202402</th>
+        <td>Daniel Okafor</td>
+        <td>12</td>
+        <td>14</td>
+        <td>14</td>
+        <td>27</td>
+        <td>50</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <th scope="row">202403</th>
+        <td>Grace Mensah</td>
+        <td>18</td>
+        <td>16</td>
+        <td>17</td>
+        <td>34</td>
+        <td>58</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <th scope="row">202404</th>
+        <td>Michael Adebayo</td>
+        <td>8</td>
+        <td>10</td>
+        <td>9</td>
+        <td>18</td>
+        <td>48</td>
+        <td>C+</td>
+      </tr>
+      <tr>
+        <th scope="row">202405</th>
+        <td>Lisa Osei</td>
+        <td>14</td>
+        <td>12</td>
+        <td>13</td>
+        <td>26</td>
+        <td>47</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <th scope="row">202406</th>
+        <td>Samuel Boateng</td>
+        <td>6</td>
+        <td>8</td>
+        <td>7</td>
+        <td>14</td>
+        <td>24</td>
+        <td>D+</td>
+      </tr>
+      <tr>
+        <th scope="row">202407</th>
+        <td>Fatima Alabi</td>
+        <td>15</td>
+        <td>17</td>
+        <td>16</td>
+        <td>32</td>
+        <td>53</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <th scope="row">202408</th>
+        <td>Kwame Nkrumah</td>
+        <td>10</td>
+        <td>12</td>
+        <td>11</td>
+        <td>22</td>
+        <td>28</td>
+        <td>C</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="5" scope="rowgroup">Class Summary</th>
+        <td colspan="3">Overall performance reviewed</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
