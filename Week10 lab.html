@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini App - Users + Products + Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #f5f5f5;
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .section {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 6px;
+      }
+
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+      }
+
+      button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      #loading {
+        color: #555;
+      }
+
+      #error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mini App</h1>
+
+    <div class="container">
+      <div class="section">
+        <h2>Users</h2>
+        <div id="loading">Loading...</div>
+        <div id="error"></div>
+        <div id="users"></div>
+      </div>
+
+      <div class="section">
+        <h2>Products</h2>
+        <div id="products"></div>
+
+        <h2>Your Cart</h2>
+        <div id="cart"></div>
+        <h3 id="total"></h3>
+        <button onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+
+    <script type="module" src="Week10 lab.js"></script>
+  </body>
+</html>
